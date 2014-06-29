@@ -2,5 +2,3 @@
 layout: post
 layout: default
 ---
-
-Hey there.
