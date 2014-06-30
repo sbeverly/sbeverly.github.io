@@ -1,2 +1,12 @@
-<hr><br>
-{{ content }}
+---
+layout: default
+---
+
+<div class='container'>
+	<section id="post" class="row" style="padding-top: 70px;" align="left">
+		<div class="row">
+			<span class="post-title small-8 columns">{{ page.title }}</span> <span style="float:right;">{{ page.date | date_to_string}}</span><hr>
+			{{ page.content }}
+		</div>
+	</section>
+</div>

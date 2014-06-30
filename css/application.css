@@ -1,4 +1,5 @@
-#posts li {
-	margin-right: auto;
-	margin-left: auto;
+.post-title {
+	font-size: 23px;
+	padding: 0;
+	padding-bottom: 5px
 }
