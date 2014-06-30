@@ -1441,7 +1441,7 @@ meta.foundation-mq-topbar {
           color: black; }
     .top-bar-section ul li:hover:not(.has-form) > a {
       background-color: #555555;
-      background: #272727;
+      background: none;
       color: black; }
     .top-bar-section ul li.active > a {
       background: #2ba6cb;
@@ -1563,7 +1563,7 @@ meta.foundation-mq-topbar {
           display: none; }
     .top-bar-section li.hover > a:not(.button) {
       background-color: #555555;
-      background: #272727;
+      background: none;
       color: black; }
     .top-bar-section li:not(.has-form) a:not(.button) {
       padding: 0 15px;
@@ -1571,7 +1571,7 @@ meta.foundation-mq-topbar {
       background: #F8F1E1; }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
         background-color: #555555;
-        background: #272727; }
+        background: none; }
     .top-bar-section li.active:not(.has-form) a:not(.button) {
       padding: 0 15px;
       line-height: 45px;
@@ -1632,7 +1632,7 @@ meta.foundation-mq-topbar {
       .top-bar-section .dropdown li:not(.has-form):hover > a:not(.button) {
         color: black;
         background-color: #555555;
-        background: #272727; }
+        background: none; }
       .top-bar-section .dropdown li label {
         black-space: nowrap;
         background: #F8F1E1; }
@@ -1663,7 +1663,7 @@ meta.foundation-mq-topbar {
 
   .no-js .top-bar-section ul li:hover > a {
     background-color: #555555;
-    background: #272727;
+    background: none;
     color: black; }
   .no-js .top-bar-section ul li:active > a {
     background: #2ba6cb;
