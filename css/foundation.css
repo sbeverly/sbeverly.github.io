@@ -2467,11 +2467,12 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #2ba6cb;
+  color: black;
   text-decoration: none;
   line-height: inherit; }
   a:hover, a:focus {
-    color: #258faf; }
+    color: none;
+    font-style: italic; }
   a img {
     border: none; }
 
