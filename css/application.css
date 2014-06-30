@@ -13,3 +13,9 @@
 nav a:hover {
 	font-style: normal;
 }
+
+#body {
+	background-color: black;
+	background-image: url('/img/boat_pic.jpg');
+	background-size: cover;
+}
