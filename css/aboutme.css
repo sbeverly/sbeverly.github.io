@@ -1,16 +1,30 @@
 #about-pic {
-background-color: #000;
-background-image: url('/img/me.jpg');
-background-size: cover;
-background-position: 50%;
-height: 100vh;
-max-height: 100%;
-width: 100%;
-text-shadow: 0 0 10px rgba(0,0,0,.8);
-color: #fff;
+	background-color: #000;
+	background-image: url('http://38.media.tumblr.com/98aec9f019a3eab0563695cac9e19cd3/tumblr_miaiuikwRt1qdeuyro1_1280.jpg');
+	background-size: cover;
+	background-position: 50%;
+	height: 100vh;
+	max-height: 100%;
+	width: 100%;
+	color: #fff;
 }
 
-#about-back {
-	color: white;
-	font-size: 30px;
+.top-bar {
+	background: none;
+}
+
+#about-pic nav {
+	background: none;
+}
+
+#about-pic nav ul {
+	background: none;
+}
+
+#about-pic nav ul li {
+	background: none;
+}
+
+#about-pic nav ul li a {
+	background: none;
 }
