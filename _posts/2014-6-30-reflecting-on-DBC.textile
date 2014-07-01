@@ -1,9 +1,10 @@
 ---
 layout: post
+title: Reflecting on DBC
 ---
 I have been programming off and on in my free time for years but decided to go pro and join the Dev Bootcamp community to guide me in my transition.  I couldn’t be happier with the decision… Having been trained in the very traditional and highly structured field of law, making the jump into tech has been exhilerating and totally rewarding.  
 
-Having said that, going from amateur to pro in 21 weeks is tough - Dev Bootcamp gives you no illusions about that.  Over the course of the program we routinely put in 12 hour days (even longer during preparations for our final prjects) but at no point did I feel burned out or that I had reached my limit - now I know I’m in the right field. The more there was to do, the more amped I was to get it done.  I’m pretty sure there were two reasons for this: 1.) Interesting work and 2.) Culture.
+Having said that, going from amateur to pro in 21 weeks is tough - Dev Bootcamp gives you no illusions about that.  Over the course of the program we routinely put in 12 hour days (even longer during preparations for our final prjects) but at no point did I feel burned out or that I had reached my limit - proof I’m in the right field. The more there was to do, the more amped I was to get it done.  I’m pretty sure there were two reasons for this: 1.) interesting work and 2.) a healthy culture.
 
 **Interesting work**
 

@@ -2472,7 +2472,7 @@ a {
   line-height: inherit; }
   a:hover, a:focus {
     color: none;
-    font-style: italic; }
+    font-style: none; }
   a img {
     border: none; }
 

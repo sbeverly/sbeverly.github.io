@@ -1,0 +1,16 @@
+#about-pic {
+background-color: #000;
+background-image: url('/img/me.jpg');
+background-size: cover;
+background-position: 50%;
+height: 100vh;
+max-height: 100%;
+width: 100%;
+text-shadow: 0 0 10px rgba(0,0,0,.8);
+color: #fff;
+}
+
+#about-back {
+	color: white;
+	font-size: 30px;
+}

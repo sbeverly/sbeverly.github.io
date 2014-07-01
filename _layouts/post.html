@@ -2,11 +2,19 @@
 layout: default
 ---
 
-<div class='container'>
-	<section id="post" class="row" style="padding-top: 70px;" align="left">
-		<div class="row">
-			<span class="post-title small-6 columns">{{ page.title }}</span> <span style="float:right;">{{ page.date | date_to_string}}</span><hr>
-			<div class="small-9 small-centered columns">{{ content }}</div>
+<div class="row" style="padding-top: 70; padding-bottom: 50px">
+	<span class="post-title small-6 columns">{{ page.title }}</span><span style="float:right;">{{ page.date | date_to_string}}</span><hr>
+	<div class="small-9 small-centered columns">{{ content }}</div>
+</div>
+
+
+<div class="row" style="padding-bottom: 200px;">
+	<div class="small-9 small-centered columns">
+		<a href= "/" class='grow-icon'> << </a>
+		<div style="float: right;">
+			<a href="{{ page.previous.url }}" class='grow-icon'> < </a>
+			<span> &nbsp &nbsp  &nbsp</span>
+			<a href="{{ page.next.url }}" class='grow-icon'> > </a> 
 		</div>
-	</section>
+	</div>
 </div>
