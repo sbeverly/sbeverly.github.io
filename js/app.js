@@ -4,5 +4,5 @@ $(document).ready(function() {
 		$('#arrow').animate({
 			marginTop: "720"
 		}, 1000)
-	}, 750)
+	}, 550)
 })
