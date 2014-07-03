@@ -1,6 +1,8 @@
-// $(document).ready(function() {
-// 	$('#aboutme').click(function(e) {
-// 		e.preventDefault();
-// 		$('#about-modal').foundation('reveal', 'open', '/aboutme.html');
-// 	})
-// })
+$(document).ready(function() {
+	setInterval(function() {
+		$('#arrow').fadeIn()	
+		$('#arrow').animate({
+			marginTop: "720"
+		}, 1000)
+	}, 750)
+})

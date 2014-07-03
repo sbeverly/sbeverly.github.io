@@ -9,12 +9,21 @@ layout: default
 
 
 <div class="row" style="padding-bottom: 200px;">
-	<div class="small-9 small-centered columns">
-		<a href= "/" class='grow-icon'> << </a>
+	<div class="small-9 small-centered columns post-navs">
+		<a href= "/" class='grow'> Back to Posts </a>
 		<div style="float: right;">
-			<a href="{{ page.previous.url }}" class='grow-icon'> < </a>
-			<span> &nbsp &nbsp  &nbsp</span>
-			<a href="{{ page.next.url }}" class='grow-icon'> > </a> 
+			
+			{% unless page.previous == nil %}
+				<a href="{{ page.previous.url }}" class='grow'> Older </a>
+			{%endunless%}
+			
+			{% unless page.next == nil or page.previous == nil %}
+			<span> &nbsp | &nbsp</span>
+			{%endunless%}
+			
+			{% unless page.next == nil %}
+				<a href="{{ page.next.url }}" class='grow'> Newer </a> 
+			{%endunless%}
 		</div>
 	</div>
 </div>
