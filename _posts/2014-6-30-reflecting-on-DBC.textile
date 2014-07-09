@@ -8,7 +8,7 @@ Having said that, going from amateur to pro in 21 weeks is tough – Dev Bootcam
 
 **Interesting Work**
 
-What makes software engineering so cool isn’t just that there are an unlimited number of hard problems to solve, it’s also that the tools with which you can solve them are constantly evolving. I would say it’s nearly impossible to stop learning in this field as there are already more technologies out there than you could reasonably expect to master and many more on the way.
+What makes software engineering so appealing isn’t just that there are an unlimited number of hard problems to solve, it’s also that the tools with which you can solve them are constantly evolving. I would say it’s nearly impossible to stop learning in this field as there are already more technologies out there than you could reasonably expect to master and many more on the way.
 
 To that point, what I have really come to appreciate about DBC was it’s commitment to teach us to be well-rounded programmers, not just Ruby on Rails developers. While we were immersed in those technologies along with JavaScript, they were only a means to end. The real point was to give us the skills to quickly learn any programming language we wanted and be effective in the field once we had done so.
 
