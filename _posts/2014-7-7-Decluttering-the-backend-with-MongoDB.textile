@@ -1,5 +1,6 @@
 ---
 layout: post
+title: Unwinding... with MongoDB
 ---
 
 I finally had the time to read up a bit more on MongoDB and integrate it into my final project from DBC, <a href="http://smartipantsgame.com">SmartiPants</a>.

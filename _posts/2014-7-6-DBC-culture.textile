@@ -1,0 +1,41 @@
+---
+layout: post
+title: Reflecting on DBC pt. 2 - Culture
+---
+
+In my last post I wrote about the programming skills DBC imparts to it's "boots."  The curriculum is well thought out and the pace of the program is fast but fun.  
+
+However, the only way to keep the pace of the program high is to make sure you are learning as efficiently as possible.  Of course, to really learn something, 90% of the effort needs to come from you, the student.  But one way that DBC can influence your ability to learn is by creating a culture that maximizes the utility of the most valuable resources available to you during your time at DBC, the teachers and students.  Two ways they foster this culture is by focusing on pair programming and building trust within a cohort.
+
+**Pair Programming**
+
+At DBC you pair program all day, everyday, with few exceptions.  Why?  Well for one it teaches you how to pair program effectively, which is an important soft skill for any software engineer to have.  
+
+We were given guidance on best-practices in pairing to serve as a framework for our interactions - but as with anything else, we all needed to make our own mistakes and learn from them.  We were required to pair with different people everyday and give formal feedback on our sessions with the intention of getting better as the weeks moved on.
+
+I was actually very surprised by how well I was I able to learn through this method.  Until coming to DBC, I was most comfortable learning on my own.  So frankly I was a little worried that constant pair coding would slow me down, or add unnecessary frustration while I was trying to learn new concepts.  I realized within the first week though, that I was totally wrong.  
+
+There is so much new information coming at you during the day, that it is impossible to fully process it on your own and working with a pair essentially gives you access to a parallel processor of sorts.  It also forces you to think about programming in a more structured way because you can't just grab the keyboard and start typing random possible solutions to a problem.  You'll feel the need to explain your thought process to your pair, which causes you to think more deeply about the problem and has the added benefit of keeping your trusty "parallel processor" on the same page.
+
+There were countless times where a simple typo was the problem and it might have taken you 15 minutes(or much longer) to notice it if you were working alone.  In many other situations, a different perspective, knowledge of design paradigm, Ruby method or just one of you being "in the zone" keeps the learning moving forward when it may have otherwise stalled.
+
+What I noticed happening over the course was a natural ebb and flow of energy between me and whomever I was working with, especially as the cohort got more comfortable with each other.  Generally, at any given point one of you develops very clear picture of how to move forward on a particular part of a problem.  They share and maybe start driving to implement the solution.  
+
+After observing their solution, maybe you catch some problems with it or it sparks a new way of approaching the problem and and you pick up from where they left off with a refinement or an idea on how to handle the next step.  The majority of my parings followed this pattern and many of the days went so quickly that I found the call to lunch actually annoying!  But eat lunch, seriously.
+
+Of course, having to learn collectively in a program this intense, with people you only recently met creates the potential for bad experiences, which is why in order for it to work DBC puts an emphasis on breaking down the barriers between cohort mates and building trust.
+
+
+**Building Trust**
+
+As one of our instructors put it, "confusion is the feeling you have right before you learn something."  So you should essentially be in a constant state confusion at DBC because you'll be learning a series of new things every day.  Well, being in a constant state of confusion for 9-weeks can be stressful.  It's especially stressful when you are constantly comparing yourself with everyone around you, which is what 99% of people do.
+
+DBC does it's best to remove any reason for you to do that.  You are encouraged to ask questions everyday - and by encouraged, I mean it is practically demanded.  The idea is for everyone to feel comfortable seeing the people around them as assets rather than a point of comparison or someone to impress.  This an "expose your ignorance" environment, not a "fake it 'till you make it" one.
+
+To build the trust required to make yourself vulnerable enough to consistently expose what you don't know and learn in open environment, DBC puts a lot of time and energy into the mental health and closeness of the cohort.  There are numerous cohort exercises and events designed to create the desired environment/culture.  I won't detail it all here but suffice to say, don't expect to just learn to code at DBC.  Their philosophy on learning encompasses more than just telling you how to nest resources in Rails or use prototypes in JavaScript.
+
+Although I have already had many positive and formative academic experiences, I can honestly say that attending DBC has helped me grow as person and a learner in ways that I certainly was not expecting.
+
+Their style may not fit everyone's personality, in the beggining it was a stretch for me and something that I wasn't anticipating.  I'm the sort of person that has to understand why something works before I can 100% accept it, but I'm glad I stuck with it.
+
+Just know that you are in for a friendly yet intense and highly collaborative learning environment.
