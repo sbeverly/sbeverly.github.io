@@ -1,15 +1,16 @@
 ---
 layout: default
 ---
-
-<div class="row" style="padding-top: 70; padding-bottom: 50px">
-	<span class="post-title small-6 columns">{{ page.title }}</span><span style="float:right;">{{ page.date | date_to_string}}</span><hr>
-	<div class="small-9 small-centered columns">{{ content }}</div>
-</div>
+<div class="post-layout">
+	<div class="row post-content" style="margin: 70px 15px 50px 15px ">
+		<span class="post-title small-6 columns">{{ page.title }}</span><span style="float:right;">{{ page.date | date_to_string}}</span><hr>
+		<div class="small-10 small-centered columns regular-post">{{ content }}</div>
+		<div class="mobile-post">{{ content }}</div>
+	</div>
 
 
 <div class="row" style="padding-bottom: 200px;">
-	<div class="small-9 small-centered columns post-navs">
+	<div class="small-10 small-centered columns post-navs">
 		<a href= "/" class='grow'> Back to Posts </a>
 		<div style="float: right;">
 			
@@ -45,4 +46,5 @@ layout: default
 		    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 		</div>
 	</div>
+</div>
 </div>
