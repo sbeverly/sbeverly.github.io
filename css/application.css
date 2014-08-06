@@ -1,13 +1,7 @@
- {
-  padding: 15px;
-}
 
-@media only screen and (min-width: 40.063em) {
-  .mobile {display: none;}
-  .mobile-post {display: none;}
- }
 
-@media only screen and (max-width: 40em) { 
+
+@media only screen and (max-width: 699.9px) { 
   .regular {display: none;}
   .regular-post {display: none;}
 
@@ -44,21 +38,25 @@
 
 }
 
+@media only screen and (min-width: 700px) {
+  .mobile {display: none;}
+  .mobile-post {display: none;}
+ }
  .post-layout {
     width: 95%;
     padding: 2%;
   }
 
 .post-title {
-	font-size: 23px;
-	padding: 0;
-	padding-bottom: 5px
+  font-size: 23px;
+  padding: 0;
+  padding-bottom: 5px
 }
 
 .icon {
-	max-height: 32px;
-	max-width: 32px;
-	padding-top: 15px;
+  max-height: 32px;
+  max-width: 32px;
+  padding-top: 15px;
 }
 
 .post-navs a {
@@ -66,7 +64,7 @@
 }
 
 nav a:hover {
-	font-style: normal;
+  font-style: normal;
 }
 
 .float {
