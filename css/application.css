@@ -10,7 +10,7 @@
     display: block;
     padding-top: 10%;
     width: 100%;
-    height: 100vh;
+    height: 100%;
   }
   .mobile li { display: inline; }
 
@@ -44,6 +44,11 @@
   .mobile {display: none;}
   .mobile-post {display: none;}
  }
+
+#blog {
+    padding-top: 75px;
+  }
+
  .post-layout {
     width: 95%;
     padding: 2%;
