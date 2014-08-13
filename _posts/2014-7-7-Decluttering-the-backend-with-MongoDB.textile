@@ -19,7 +19,7 @@ An example might be if you have a data structure where a user is an document and
 
 After implementing MongoDB and MongoID (an Object Document Wrapper for MongoDB), all of the following code, required to save and pull deconstructed JSON data from our relational database....
 
-<pre><code class='ruby'> 
+{% highlight ruby lineos %}
 class GameBuilder
   def initialize(user_id, params)
     @params = params
@@ -57,8 +57,8 @@ class GameBuilder
               audio_correct: round[:soundGuess],
               position_correct: round[:positionGuess])
   end
-end  
-</code></pre>
+end
+{% endhighlight %}  
 
 <pre><code class='ruby'>
 class JSONFormatter

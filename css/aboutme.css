@@ -1,9 +1,28 @@
+@media only screen and (max-width: 699.9px) { 
+	
+	#about-pic {
+		display: none;
+	}
+
+	#summary {
+		margin-top: 0;
+	}
+
+	#summary-text{
+		margin-top: 0;
+	}
+
+	#summary-text p {
+		font-size: 13px;
+	}
+}
+
 #about-pic {
 	background-color: #000;
 	background-image: url('/img/nyc.jpg');
 	background-size: cover;
 	background-position: 50%;
-	height: 100vh;
+	height: 100%;
 	max-height: 100%;
 	width: 100%;
 	color: #fff;
@@ -31,7 +50,7 @@
 
 #summary-text {
 	text-align: center;
-	margin-top: 150px;
+	margin-top: 15%;
 	margin-left: 25px;
 	margin-right: 25px;
 }
