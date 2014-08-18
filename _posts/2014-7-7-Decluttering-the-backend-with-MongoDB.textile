@@ -11,7 +11,7 @@ The single JSON object representing a game, was generated on the back-end from a
 
 **Unwind**
 
-One of the weirdest things for a beginner coming from SQL to understand about MongoDB is the <pre><code>$unwind</code></pre> function.  It sounds like a strange add on that you wont need until you want to do something advanced but it's actually pretty central to using Mongo.
+One of the weirdest things for a beginner coming from SQL to understand about MongoDB is the <strong>$unwind</strong> function.  It sounds like a strange add on that you wont need until you want to do something advanced but it's actually pretty central to using Mongo.
 
 Mongo only returns documents that match your queries, **not** sub-documents.  If you have a list of documents (which look just like JSON objects, basically) where each document has a property which is an array of documents (JSON objects), you'll need to  use $unwind if you ever want to search for and return those _sub-documents_.  If you search without using unwind you will just get the parent document that contains what you were looking for.  So essentially $unwind will change the scope of the documents that are returned when a document matches your query.
 
@@ -19,7 +19,8 @@ An example might be if you have a data structure where a user is an document and
 
 After implementing MongoDB and MongoID (an Object Document Wrapper for MongoDB), all of the following code, required to save and pull deconstructed JSON data from our relational database....
 
-{% highlight ruby lineos %}
+<div class="post">
+{% highlight ruby %}
 class GameBuilder
   def initialize(user_id, params)
     @params = params
@@ -58,35 +59,43 @@ class GameBuilder
               position_correct: round[:positionGuess])
   end
 end
-{% endhighlight %}  
+{% endhighlight %}
+</div><br>
+and...
 
-<pre><code class='ruby'>
-class JSONFormatter
-  def initialize(klass,property)
-    @klass = klass
-    @property = property
-  end
-
-  def format
-    hash_of_property_values = Hash.new
-
-    pull_values(@klass, @property).each_with_index do |property_value, index|
-      hash_of_property_values[index + 1] = property_value
+<div class="post">
+{% highlight ruby %}
+  class JSONFormatter
+    def initialize(klass,property)
+      @klass = klass
+      @property = property
     end
-    hash_of_property_values
-  end
 
-  private
+    def format
+      hash_of_property_values = Hash.new
 
-  def pull_values(klass, property)
-    klass.all.map{|instance| instance.send(property) }
+      pull_values(@klass, @property).each_with_index do |property_value, index|
+        hash_of_property_values[index + 1] = property_value
+      end
+      hash_of_property_values
+    end
+
+    private
+
+    def pull_values(klass, property)
+      klass.all.map{|instance| instance.send(property) }
+    end
   end
-end
-</code></pre><br>
+{% endhighlight %}
+</div><br>
+
 
 was replaced with a query like this:
 
-<pre><code class='ruby'>
+<div class="post">
+
+{% highlight ruby %}
+
 Game.collection.aggregate(
         {
           "$match" => { "_id" => @last_game_id } 
@@ -104,6 +113,7 @@ Game.collection.aggregate(
           "$project" => { 'rounds.' + "#attribute" => 1, '_id' => 0 }
         }
       ).map! { |round| round = round[:rounds][attribute.to_sym] }
-</code></pre><br>
+{% endhighlight %}
+</div><br>
 
 Not to mention, we were able to collapse all of the SQL tables into one object.  Im still working out when the best time to use a NoSQL DB is and how to maximize its strengths but this seems like a pretty clear cut use case for preserving our apps data structure.
