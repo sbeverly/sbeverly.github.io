@@ -3,7 +3,7 @@ layout: post
 title: Reflecting on DBC pt. 2 - Culture
 ---
 
-In my last <a href='{% post_url 2014-6-30-reflecting-on-DBC %}'>post on DBC</a> I wrote about the programming skills DBC imparts to it's "boots."  The curriculum is well thought out and the pace of the program is fast but fun.  
+In my last <span onclick="window.location.href='{% post_url 2014-6-30-reflecting-on-DBC %}'">post on DBC</span> I wrote about the programming skills DBC imparts to it's "boots."  The curriculum is well thought out and the pace of the program is fast but fun.  
 
 However, the only way to keep the pace of the program high is to make sure you are learning as efficiently as possible.  Of course, to really learn something, 90% of the effort needs to come from you, the student.  But one way that DBC can influence your ability to learn is by creating a culture that maximizes the utility of the most valuable resources available to you during your time at DBC, the teachers and students.  Two ways they foster this culture is by focusing on pair programming and building trust within a cohort.
 
