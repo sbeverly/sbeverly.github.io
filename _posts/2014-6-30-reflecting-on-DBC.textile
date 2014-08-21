@@ -16,4 +16,4 @@ Once we were oriented in Ruby we were absolved of the notion that we were going 
 
 DBC cohorts are already comprised of a self-selected group of adventurous, tech savvy people who have put in a significant amount of time learning on their own. We were able to take those pre-existing qualities to the next level with the help of industry pros providing us with constant feedback and making sure that we were hitting the required benchmarks to be successful. I can’t believe how much I learned in this intense experience and only look forward to learning more.
 
-However, all of this could have easily been derailed without the significant investment made in fostering a collaborative and supportive culture, the subject of my next <span onclick="window.location.href='{% post_url 2014-7-20-DBC-culture %}'">post... </span>
+However, all of this could have easily been derailed without the significant investment made in fostering a collaborative and supportive culture, the subject of my next <span class="post-link" onclick="window.location.href='{% post_url 2014-7-20-DBC-culture %}'">post... </span>
