@@ -10,10 +10,9 @@ layout: default
 	    	<li><a href="/aboutme.html" class='float' id='aboutme'>About Me</a></li>
 			
 	  	</ul><br><br><br><br>
-	  	<li><a href="https://github.com/sbeverly"><img class='icon float' src="/img/github.png"></a></li>
-		<li><a href="http://lnkd.in/purq4h"><img class='icon float' src="/img/linkedin.png"></a></li>
-	    <li><a href="https://twitter.com/sxanatos"><img class='icon float' src="/img/twitter.png"></a></li>
-	</ul>
+  	<li><a href="https://github.com/sbeverly"><img class='icon float' src="/img/github.png"></a></li>
+	<li><a href="http://lnkd.in/purq4h"><img class='icon float' src="/img/linkedin.png"></a></li>
+    <li><a href="https://twitter.com/sxanatos"><img class='icon float' src="/img/twitter.png"></a></li>
 	  </center>
 </div>
 
@@ -21,11 +20,18 @@ layout: default
 	<div class="medium-9 medium-centered columns">
 		<ul id="posts" style="list-style-type: none;">
 		  {% for post in site.posts %}
-	    	<br><li>
-      			<span class="post-title small-8 columns"> <a href="{{ post.url }}" class="float"> {{ post.title }} </a></span> <span style="float:right;">{{ post.date | date_to_string}}</span><br>
-      			<div style="float:left;">{{ post.excerpt }}</div>
-		    </li><br>
-		  <hr>
+	    	<br>
+	    	
+	    	<li class="float post-snippet">
+      			<a href="{{ post.url }}">
+	      			<span class="post-title small-8 columns">  {{ post.title }} </span> 
+	      			<span style="float:right;">{{ post.date | date_to_string}}</span><br>
+	      			<div id="post-excerpt" style="float:left;">{{ post.excerpt }}</div>
+      			</a>
+		    </li>
+		    
+		    <br>
+		  	<hr>
 		  {% endfor %}
 		</ul>
 	</div>

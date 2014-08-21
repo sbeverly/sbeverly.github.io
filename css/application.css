@@ -1,4 +1,6 @@
-
+* {
+  -webkit-font-smoothing: subpixel-antialiased;
+}
 
 
 @media only screen and (max-width: 699.9px) { 
@@ -61,8 +63,8 @@
 }
 
 .icon {
-  max-height: 32px;
-  max-width: 32px;
+  max-height: 34px;
+  max-width: 34px;
   padding-top: 15px;
 }
 

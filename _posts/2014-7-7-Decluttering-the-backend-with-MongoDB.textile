@@ -3,7 +3,7 @@ layout: post
 title: Unwinding... with MongoDB
 ---
 
-I finally had the time to read up a bit more on MongoDB and integrate it into my final project from DBC, <a href="http://smartipantsgame.com">SmartiPants</a>.
+I finally had the time to read up a bit more on MongoDB and integrate it into my final project from DBC, <a href='http://smartipantsgame.com'>SmartiPants</a>.
 
 The data structure of our project was tailor made for Mongo DB.  We were essentially using one JSON object that was being passed around to the different parts of our app in order to be used in different ways.  This structure wasn't accidental, we spent a decent amount of time figuring our to simplify communication between the pieces of our application and I wanted to implement a database that took advantage of that simplicity.
 
@@ -19,7 +19,7 @@ An example might be if you have a data structure where a user is an document and
 
 After implementing MongoDB and MongoID (an Object Document Wrapper for MongoDB), all of the following code, required to save and pull deconstructed JSON data from our relational database....
 
-<div class="post">
+<div class='post'>
 {% highlight ruby %}
 class GameBuilder
   def initialize(user_id, params)
@@ -63,7 +63,7 @@ end
 </div><br>
 and...
 
-<div class="post">
+<div class='post'>
 {% highlight ruby %}
   class JSONFormatter
     def initialize(klass,property)
@@ -92,7 +92,7 @@ and...
 
 was replaced with a query like this:
 
-<div class="post">
+<div class='post'>
 
 {% highlight ruby %}
 
