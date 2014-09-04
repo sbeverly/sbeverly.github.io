@@ -1,0 +1,54 @@
+---
+layout: post
+title: Rails Partials with Angular.js
+---
+
+<strong>The Problem</strong>
+I've been building a side project using Angular.js and rails as a backend serving returning mostly JSON.  There are alot of AJAX calls in order to give the project that non-page-refreshing app feel.  
+
+Because of the AJAX requests I ended up needing to use alot partials rather than serving standard html pages.  I was learning to use Angular.js and just experimenting with setting up the controllers which are what house the many functions that would be binded to various elements on your page.  It's like an advanced version of .click listeners that keeps your js files clean and streamlined.  You don't need to set up listeners for every element on your page, you simply declare which function you want to fire when you click on the desired element.
+
+For example:
+
+{% highlight html %}
+<button ng-click="fireThis()"> Click to Fire </button>
+{% endhighlight %}
+
+
+However, Angular faces the exact same problem using ng-click as standard Javascript does using on.("click"...) or .click(...).  When the DOM is loaded Angular searches for directives (like ng-click="thisFunction()") and does whatever the directive tells it to, which in the case of an ng-click means "bind a click on this element to the function it is set equal to."  The problem is that Angular on searches on the initial load of the DOM so when you load additional HTML elements via an AJAX request which renders a partial you now have elements that are unbound to the Angular controller you wish they were bound to.
+
+
+<strong>The Fix</strong>
+
+You may have already done this when setting up your controller but I was new to Angular and I set the controller the most basic way.
+
+The Basic Controller:
+
+{% highlight javascript %}
+app.controller('MyController', function() {
+	fireThis = function() {
+		console.log('anything you want')
+	}
+	...
+})
+{% endhighlight %}
+
+When you load a partial that has an element like <span class="post">{% highlight javascript %} <button ng-click="fireThis()"> {% endhighlight %} </span> won't trigger the function 'fireThis()' because it was never bound to it when the DOM first loaded.
+
+To get it to trigger the function, first you need to re-write the controller using <strong>$scope</strong> like this:
+
+{% highlight javascript %}
+app.controller('MyController', ['$scope', function($scope){ 
+	$scope.fireThis = function() {
+		console.log('anything you want')
+	}
+
+	$scope.somethingElse = ...
+}])
+{% endhighlight %}
+
+Once you have done that you can manually call functions within it that were never bound to the controller by using onclick instead of ng-click and like this:
+
+{% highlight html %} <button onclick="$('#elementOfYourController').scope.fireThis()"> </button> {% endhighlight %}
+
+There are apparently ways to force Angular to re-compile the DOM whenever you want but it would then re-read and re-execute all the directives in your HTML, which is probably going to lead to some irritating bugs in a complex one-page site.
